@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/phulocnguyen/phulocnguyen.github.io">< alt="Academic Portfolio" width="200"></a>
+  <a href="https://github.com/phulocnguyen/phulocnguyen.github.io"></a>
   <br>
   Academic Portfolio
   <br>
