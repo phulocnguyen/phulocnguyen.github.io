@@ -38,16 +38,16 @@ body { overflow-wrap: break-word; }
     --news-badge: #192539;
 }
 .news h2 {
-    margin: 0 0 22px;
+    margin: 0 0 16px;
     color: var(--news-accent);
     font-family: monospace;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: .18em;
     text-transform: uppercase;
 }
 .news-scroll {
-    max-height: 375px;
+    max-height: 300px;
     overflow-y: auto;
     padding-right: 20px;
     scrollbar-width: thin;
@@ -59,35 +59,34 @@ body { overflow-wrap: break-word; }
 .news-list { margin: 0; padding: 0; list-style: none; }
 .news-list li {
     display: grid;
-    grid-template-columns: 90px 28px minmax(0, 1fr);
+    grid-template-columns: 80px 22px minmax(0, 1fr);
     align-items: start;
-    gap: 14px;
-    margin: 0 0 28px;
+    gap: 10px;
+    margin: 0 0 16px;
 }
 .news-list li:last-child { margin-bottom: 0; }
 .news-date {
     display: block;
-    padding: 5px 8px;
+    padding: 3px 6px;
     border: 1px solid var(--news-line);
     border-radius: 999px;
     background: var(--news-badge);
     color: var(--news-accent);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 650;
     line-height: 1.5;
     white-space: nowrap;
     text-align: center;
 }
-.news-icon { font-size: 23px; line-height: 1.45; }
-.news-list p { margin: 0; color: var(--news-text); font-size: 22px; line-height: 1.7; }
+.news-icon { font-size: 17px; line-height: 1.45; }
+.news-list p { margin: 0; color: var(--news-text); font-size: 14px; line-height: 1.5; }
 .news-list strong { color: var(--news-accent); font-weight: 650; }
 @media (max-width: 600px) {
     .news { padding-left: 16px; }
     .news-scroll { padding-right: 10px; }
     .news-list li { grid-template-columns: 80px 22px minmax(0, 1fr); gap: 8px; }
     .news-date { padding: 4px 6px; font-size: 12px; }
-    .news-icon { font-size: 19px; }
-    .news-list p { font-size: 17px; line-height: 1.65; }
+    .news-icon { font-size: 17px; }
 }
 @media (max-width: 360px) {
     .news-list li { grid-template-columns: 76px minmax(0, 1fr); }
