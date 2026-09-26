@@ -1,268 +1,372 @@
-/* MOBILE's FIRST - Custom properties */
-/* This classes will be then modified for bigger screens */
-
-#mowatave {
-	color: #2bd284 !important;
-	text-decoration: underline;
+:root {
+    --background-color: #fff;
+    --text-color: #111;
+    --link-color: #8b0000;
+    --muted-color: #666;
+    --border-color: #808080;
 }
 
-.underline {
-	text-decoration: underline;
+[data-theme="dark"] {
+    --background-color: #111;
+    --text-color: #ddd;
+    --link-color: #d4a017;
+    --muted-color: #999;
+    --border-color: #555;
 }
 
-a {
-	text-decoration-thickness: 1px;
+* {
+    box-sizing: border-box;
 }
 
-#hobbiesH4 {
-	text-align: center;
+html {
+    background: var(--background-color);
 }
 
-#hobbie1, #hobbie2, #hobbie3 {
-	text-align: center;
-	margin-top: 1em;
+body {
+    width: 80%;
+    max-width: 1100px;
+    min-height: 200px;
+    margin: 5vh auto;
+    padding: 1em;
+    color: var(--text-color);
+    background: var(--background-color);
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.45;
 }
 
-.abme-honors-bullet{
-	font-size: 16px;
+a,
+a:visited {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
-/* GENERAL CSS */
-#main-content {
-	margin-top: 20px;
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
 }
 
-li > .active {
-	font-weight: 500;
+h1,
+h2 {
+    line-height: 1.2;
 }
 
-.trnsf-thin {
-	font-weight: 300;
+h1 a,
+h2 a {
+    color: inherit;
 }
 
-.trnsf-italic {
-	font-style: italic;
+header {
+    margin-bottom: 2em;
 }
 
-.justify {
-	text-align: justify;
-  	text-justify: inter-word;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.lucida-console {
-	font-family: 'Lucida Console', monospace;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-/* NICOLAS MESEGUER CONTACT INFO - Related*/
-.profilepicture {
-	max-height: 300px;
-	min-width: 150px;
-	min-height: 150px;
-	margin-left: auto;
-	margin-right: auto;
+nav a {
+    font-weight: bold;
 }
 
-.fseneca {
-	max-width: 50%; 
-	height: auto;
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-family: monospace;
+    font-size: 14px;
+    padding: 0.15em 0.5em;
+    cursor: pointer;
 }
 
-.fseneca:hover {
-	transform: scale(1.05,1.05);
+.theme-toggle:hover {
+    background: var(--text-color);
+    color: var(--background-color);
 }
 
-/* PUBLICATIONS - Related */
-.pub-block {
-	border-left: 2px #D9DDDC solid;
-	padding-left: 15px;
+nav a[aria-current="page"] {
+    text-decoration: underline;
 }
 
-.pub-year-h2 {
-	font-size: 3.2em;
-	font-weight: 100;
+.about {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
 }
 
-.pub-authors {
-	font-weight: 400;
+.bio {
+    max-width: 700px;
 }
 
-.pub-authors .pub-author {
-	font-weight: 500;
+.bio h1 {
+    margin-top: 0;
 }
 
-.pub-congress {
-	font-weight: 100;
+.profile {
+    width: 140px;
+    flex: 0 0 140px;
+    margin-top: 3.8em;
 }
 
-.pub-force-margin-left {
-	margin-left: 10px !important;
+.profile img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-/* ACADEMIC - Related */
-.academic-year-h2, .student-h2 {
-	font-size: 3.2em;
-	font-weight: 100;
+.profile p {
+    margin-top: 0.6em;
+    text-align: center;
 }
 
-.academic-block, .student-block {
-	padding-left: 15px;
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 1em;
 }
 
-.academic-rol {
-	font-weight: 400;
+.contact-links a {
+    padding: 0.25em 0.6em;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
 }
 
-.academic-year {
-	font-weight: 100;
+.contact-links a:hover,
+.contact-links a:focus-visible {
+    background: var(--text-color);
+    color: var(--background-color);
+    text-decoration: none;
 }
 
-.student-mark {
-	font-weight: 400;
-	font-size: 1.1em;
+.publications {
+    clear: both;
+    margin-top: 2em;
 }
 
-.student-period {
-	font-weight: 100;
+.publication-list {
+    margin-top: 2em;
 }
 
-/* OPTION BUTTON */
-.options-button {
+.publication-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+.publication-thumbnail {
+    width: 112px;
+    height: 112px;
+    flex: 0 0 112px;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.lightbox-overlay {
     position: fixed;
-	
-    height: 50px;
-    width: 50px;
-	cursor: pointer;
-
-    border-radius: 100%;
-	
-	bottom: 25px;
-	right: 25px;
-
-	display: inline-block;
-
-	font-size: 1.2em;
-	vertical-align: middle;
-	text-align: center;
-
-	padding-top: .35em;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
 }
 
-.options-button i, img {
-	margin: auto;
-	z-index: -999;
+.lightbox-visible {
+    opacity: 1;
 }
 
-#options-toggler {
-	transition: .2s;
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-#options-toggler:hover {
-	transform: scale(1.09,1.09);
+.publication-content {
+    min-width: 0;
+    flex: 1;
 }
 
-#theme {
-	height: 40px;
-    width: 40px;
-
-	bottom: 85px !important;
-	right: 30px !important;
-
-	font-size: 1em;
-
-	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
-    transition: background-color .5s; /* For modern browsers */
+.publication-title {
+    display: block;
+    margin-bottom: 0.25em;
 }
 
-#lan {
-	height: 40px;
-    width: 40px;
-
-	bottom: 130px;
-	right: 30px;
-
-	font-size: 1em;
-
-	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
-    transition: background-color .5s; /* For modern browsers */
+.publication-authors,
+.publication-venue {
+    margin: 0.2em 0;
 }
 
-.lang-flag {
-	height: 15px;
-    width: 22.5px;
-	vertical-align:	0px;
+.publication-authors {
+    font-style: italic;
 }
 
-/* BLOG - Related */
-.blog-info {
-	font-weight: 100;
-	width: 100%;
-	clear: both;
-	display: block;
+.highlight-name {
+    font-weight: bold;
 }
 
-.blog-short {
-	font-weight: 400;
-	font-size: 17px;
+.publication-award {
+    font-weight: bold;
 }
 
-.blog-tags {
-	text-align: right;
+.publication-links {
+    margin: 0.3em 0 0;
 }
 
-.blog-tags > .tag {
-	border-radius: 100px;
-	padding: 4px;
-	font-size: 12px;
-	font-weight: 600;
-	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
-	color: white;
+.publication-links a + a::before {
+    display: inline-block;
+    margin: 0 0.6em;
+    color: var(--text-color);
+    content: "|";
+    text-decoration: none;
 }
 
-.blog-tags > .t-purple {
-	background-color: rgb(137, 70, 255, 0.8);
+[data-layout="blog"] .publication-entry {
+    gap: 1.5em;
 }
 
-.blog-tags > .t-lime {
-	background-color: rgba(118, 185, 0, 0.8);
+[data-layout="blog"] .publication-thumbnail {
+    width: 200px;
+    height: 150px;
+    flex-basis: 200px;
+    border: 1px solid var(--border-color);
 }
 
-.blog-tags > .t-sky {
-	background-color: rgba(37, 197, 223, 0.8);
+[data-layout="blog"] .publication-title {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
 }
 
-.clickable {
-	border-radius: 20px;
-	border: 2px #D9DDDC solid;
-	padding: 15px;
-	cursor: pointer;
-	transition: .3s;
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+.publication-group {
+    margin: 2.5em 0 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.1em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.clickable:hover {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
-	transform: scale(1.03,1.03);
+.publication-group:first-child {
+    margin-top: 0;
 }
 
-/* MEDIA QUERIES */
-/* BIGGER SCREENS */
-@media (min-width: 768px) {
-
-	#hobbiesH4 {
-		text-align: left;
-	}
-
-	#hobbie1, #hobbie2, #hobbie3 {
-		text-align: left;
-		margin-top: 0;
-	}
-
-	.profilepicture {
-		margin-left: 0%;
-		margin-right: 0%;
-	}
-	
-	.abme-honors-bullet{
-		margin-left: 40px;
-	}
+.publication-status,
+.publication-error {
+    color: var(--muted-color);
 }
+
+.see-all-link {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 95%;
+        margin: 2vh auto;
+        padding: 0.75em;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio {
+        max-width: none;
+    }
+
+    .profile {
+        order: -1;
+        width: min(220px, 100%);
+        flex-basis: auto;
+        margin-top: 0;
+    }
+
+    [data-layout="blog"] .publication-entry {
+        gap: 1em;
+    }
+
+    [data-layout="blog"] .publication-thumbnail {
+        width: 120px;
+        height: 90px;
+        flex-basis: 120px;
+    }
+
+    [data-layout="blog"] .publication-title {
+        font-size: 1.15em;
+    }
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.photo-grid a img {
+    display: block;
+    border: 1px solid var(--border-color);
+}
+
+@media (max-width: 440px) {
+    .publication-entry,
+    [data-layout="blog"] .publication-entry {
+        flex-direction: column;
+    }
+
+    .publication-thumbnail,
+    [data-layout="blog"] .publication-thumbnail {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+        flex-basis: auto;
+        object-fit: contain;
+    }
+}
+
+/* Portfolio additions. Adapted from trqminh/trqminh.github.io. */
+body { overflow-wrap: break-word; }
+.bio { flex: 1; min-width: 0; }
+h3.publication-title { font-size: 1em; margin-top: 0; }
+.highlight-name { font-weight: bold; }
+.news, .education { margin-top: 2.5em; }
+.news li { margin-bottom: .8em; }
+.news ul { padding-left: 1.4em; }
+.education article { margin: 1.8em 0; }
+.education h2 { font-size: 1.1em; }
+.education p { margin: .5em 0; }
+.location, footer { color: var(--muted-color); }
+footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid var(--border-color); font-size: .85em; }
+.citation { margin-top: .5em; }
+.citation summary { color: var(--link-color); cursor: pointer; width: fit-content; }
+.citation pre { max-width: 100%; overflow-x: auto; padding: 1em; border: 1px solid var(--border-color); font-size: .9em; }
+.copy-citation { font: inherit; background: transparent; color: var(--text-color); border: 1px solid var(--border-color); padding: .3em .6em; cursor: pointer; }
+.copy-status { margin-left: .7em; }
+:focus-visible { outline: 2px solid var(--link-color); outline-offset: 4px; }
+.skip-link { position: absolute; top: -100px; }
+.skip-link:focus { top: 10px; background: var(--background-color); padding: .5em; }
+[hidden] { display: none !important; }
+@media (max-width: 700px) { nav li { width: auto; } nav { gap: 1em; } .profile { width: 140px; align-self: flex-start; } }

@@ -1,383 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<head>
-
-		<!-- Meta tags -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-		<meta name="description" content="Phu Loc Nguyen's website, biography, education, previous experience and published papers."/>
-		<meta name="keywords" content="Phu Loc Nguyen, Nguyen Phu Loc, medical AI, computer vision, multimodal learning"/>
-		
-		<meta name="author" content="Phu Loc Nguyen" />
-		<meta name="copyright" content="Work protected by copyright; no distribution without permission." />
-		
-		<!-- Title + Icon -->
-		<title>Phu Loc Nguyen</title>
-		<link rel="icon" type="image/x-icon" href="assets/documents/imgs/favicon.ico">
-
-		<!-- Improve SEO -->
-		<meta name="robots" content="index,follow" />
-
-		<!-- Styles -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-		<link rel="stylesheet" href="assets/css/main.css">
-
-	</head>
-
-	<!-- Google tag (gtag.js) & Google Analytics -->
-	<script>
-        fetch('./assets/js/config.json')
-            .then(response => response.json())
-            .then(config => {
-                const scriptTag = document.createElement('script');
-                scriptTag.async = true;
-                scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsMeasurementId}`;
-                document.head.appendChild(scriptTag);
-
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', config.googleAnalyticsMeasurementId);
-            })
-            .catch(error => console.error('Error loading the configuration:', error));
-    </script>
-
-	<body>
-
-		<!-- Bottom rounded button -->
-		<div class="options-button" id="options-toggler"><i class="fa-light fa-arrows-repeat"></i></div>
-		<div class="options-button" id="theme"><i class="fa-duotone fa-lightbulb"></i></div>
-		<div class="options-button" id="lan"><img class="lang-flag" src="https://flagcdn.com/w20/us.png" alt="Flag indicating the english language is selected"></div>
-
-
-		<!-- Navbar  -->
-		<nav id="top-nav" class="navbar navbar-expand-md navbar-light bg-light flex-md-nowrap flex-wrap">
-			<div class="container justify-content-center">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="collapsingNavbar3">
-					<ul class="navbar-nav mx-auto language" id="navbarList">
-						<li class="nav-item">
-							<a class="nav-link active" id="aboutme" href="#" 
-								data-en="About Me">
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="education" href="#" 
-								data-en="Education">
-						</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="publications" href="#" 
-								data-en="Publications">
-						</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="projects" href="#" 
-								data-en="Blogs">
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-		<div class="container" id="main-content">
-			<div class="row content" id="section-content">
-				
-				<!-- Phu Loc Nguyen profile and contact info -->
-				<div id="leftPanel" class="col-md-3 language">
-					<div class="row mb-3">
-						<div class="col">
-							<img src="assets/documents/imgs/profile_picture.jpg" class="rounded me-auto d-block img-fluid profilepicture" alt="Phu Loc Nguyen profile picture">
-						</div>
-					</div>
-
-					<h3 class="mb-2">Phu Loc Nguyen</h3>
-
-					<p class="mb-4">
-						<span class="t-secondary" 
-						data-en= "Master's Student - University of Arkansas, Fayetteville">	
-					</p>
-					
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fal fa-map-marker-alt" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<span 
-								data-en="Fayetteville, AR, USA">
-							</span> 
-						</div>
-					</div>
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-regular fa-envelope" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="mailto:phuloc01.nguyen@gmail.com" class="link-dark">phuloc01.nguyen@gmail.com</a>
-						</div>
-					</div>
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="https://www.linkedin.com/in/phulocnguyen/" class="link-dark" target="_blank">LinkedIn</a>
-						</div>
-					</div>
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fab fa-github" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="https://github.com/phulocnguyen" class="link-dark" target="_blank">GitHub</a>
-						</div>
-					</div>
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="ai ai-google-scholar" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="https://scholar.google.com/citations?user=QmCjU08AAAAJ&hl=en" class="link-dark" target="_blank">Google Scholar</a>
-						</div>
-					</div>
-
-				</div>
-
-				<!-- About Me -->
-				<div class="col-md-8 offset-md-1 mb-5 active" id="aboutmeContent">
-					<div class="container">
-						<div class="row language">
-							<p class="mt-2 justify">
-								<span data-en="I am a Master's student at the University of Arkansas, Fayetteville, advised by Prof. "></span><a href="https://scholar.google.com/citations?user=8ck0k_UAAAAJ&hl=en" class="link-dark" target="_blank" data-en="Ngan Le"></a><span data-en=". I am working on medical AI, multimodal learning, and computer vision. My work has appeared at MICCAI, Medical Image Analysis (MedIA), and NeurIPS. Before that, I obtained my B.Sc. at VNU University of Engineering and Technology in 2025, working with Dr. Tran Quoc Long."></span>
-							</p>
-							
-							<h4 id="researchinterestsH4" class="mt-2" 
-								data-en="Research Interests">
-							</h4>
-
-							<p class="mt-1"
-								data-en="Medical AI, multimodal learning, and computer vision, with a focus on medical image analysis, uncertainty estimation, and vision-language models.">
-							</p>
-
-							<h4 id="newsH4" class="mt-4" data-en="News"></h4>
-
-							<ul class="mt-1">
-								<li class="abme-honors-bullet">
-									<span data-en="Preprint released: "></span><strong data-en="Cross-Adversarial Local Distribution Regularization for Semi-supervised Medical Image Segmentation"></strong>
-									<!-- [<a href="https://arxiv.org/abs/2606.22617" class="link-dark" target="_blank">arXiv</a>] -->
-									- <span data-en="Jul, 2026"></span>
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<span data-en="Preprint released: "></span><strong data-en="OmniSpace: Efficient Geometry Awareness for Autonomous Vehicles MLLMs"></strong>
-									[<a href="https://arxiv.org/abs/2606.22617" class="link-dark" target="_blank">arXiv</a>]
-									- <span data-en="Jun, 2026"></span>
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<span data-en="Preprint released: "></span><strong data-en="DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving"></strong>
-									[<a href="https://arxiv.org/abs/2605.23176" class="link-dark" target="_blank">arXiv</a>]
-									- <span data-en="May, 2026"></span>
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<span data-en="Paper accepted at MICCAI 2026 (early accept) "></span><strong data-en="MedSteer: Counterfactual Endoscopic Synthesis via Training-Free Activation Steering"></strong>
-									[<a href="https://arxiv.org/abs/2603.07066" class="link-dark" target="_blank">Paper</a>]
-									- <span data-en="Mar, 2026"></span>
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<span data-en="Paper accepted at "></span><strong data-en="UNSURE 2025 (MICCAI Workshop)"></strong><span data-en=": Aleatoric Uncertainty Medical Image Segmentation Estimation via Flow Matching"></span>
-									[<a href="https://arxiv.org/abs/2507.22418" class="link-dark" target="_blank">Paper</a>]
-									- <span data-en="2025"></span>
-								</li>
-							</ul>
-
-							<h4 id="selectedPubsH4" class="mt-4" data-en="Selected Publications"></h4>
-
-							<ul class="mt-1">
-								<li class="abme-honors-bullet">
-									<strong data-en="Cross-Adversarial Local Distribution Regularization for Semi-supervised Medical Image Segmentation"></strong>
-									<div class="pub-authors mt-1"><span class="pub-author">Phu Loc Nguyen</span>, Thanh Nguyen, YiCheng Wu, Ngan Le, Trung Le, Dinh Phung, Roland Bammer</div>
-									<div class="pub-congress"><span data-en="Submitted to Medical Image Analysis (MedIA), 2026"></span></div>
-								</li>
-
-								<li class="abme-honors-bullet mt-3">
-									<strong data-en="OmniSpace: Efficient Geometry Awareness for Autonomous Vehicles MLLMs"></strong>
-									<div class="pub-authors mt-1">Hao Vo, <span class="pub-author">Phu Loc Nguyen</span>, Khoa Vo, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</div>
-									<div class="pub-congress"><span data-en="arXiv preprint, 2026"></span></div>
-									<div class="mt-1"><i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2606.22617" class="link-dark" target="_blank">Preprint</a></div>
-								</li>
-
-								<li class="abme-honors-bullet mt-3">
-									<strong data-en="DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving"></strong>
-									<div class="pub-authors mt-1">Hao Vo, Khoa Vo, <span class="pub-author">Phu Loc Nguyen</span>, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Gladys Gawugah, Sreevenkata Anjani Tishita Godavarthi, Chase Rainwater, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</div>
-									<div class="pub-congress"><span data-en="arXiv preprint, 2026"></span></div>
-									<div class="mt-1"><i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2605.23176" class="link-dark" target="_blank">Preprint</a></div>
-								</li>
-
-								<li class="abme-honors-bullet mt-3">
-									<strong data-en="MedSteer: Counterfactual Endoscopic Synthesis via Training-Free Activation Steering"></strong>
-									<div class="pub-authors mt-1">Trong-Thang Pham, <span class="pub-author">Phu Loc Nguyen</span>, Anh Nguyen, Hien Nguyen, Ngan Le</div>
-									<div class="pub-congress"><span data-en="MICCAI 2026 (early accept)"></span></div>
-									<div class="mt-1"><i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2603.07066" class="link-dark" target="_blank">Preprint</a></div>
-								</li>
-
-								<li class="abme-honors-bullet mt-3">
-									<strong data-en="Aleatoric Uncertainty Medical Image Segmentation Estimation via Flow Matching"></strong>
-									<div class="pub-authors mt-1">Van Phi Nguyen, Ngoc Huynh Trinh, Duy Minh Lam Nguyen, <span class="pub-author">Phu Loc Nguyen</span>, Quoc Long Tran</div>
-									<div class="pub-congress"><span data-en="UNSURE 2025 (MICCAI Workshop), Lecture Notes in Computer Science, vol 16166. Springer."></span></div>
-									<div class="mt-1"><i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2507.22418" class="link-dark" target="_blank">Preprint</a></div>
-								</li>
-							</ul>
-
-						</div>
-					</div>
-				</div>
-
-				<!-- Education -->
-				<div class="col-md-8 offset-md-1 mb-5" id="educationContent">
-					<div class="container">
-						<div class="row mt-2 language">
-							<h2 
-								data-en="MSc Student in Computer Science"></h2>
-							<div class="trnsf-thin" 
-								data-en="(University of Arkansas, USA — 2026 - Present)"></div>
-							<div class="trnsf-thin"
-								data-en="GPA: 4.0/4.0.">
-							</div>
-
-							<p class="mt-1 justify">
-								<span data-en="Advised by Associate Professor "></span><a href="https://scholar.google.com/citations?user=8ck0k_UAAAAJ&hl=en" class="link-dark" target="_blank" data-en="Ngan Le"></a><span data-en=", Director of the Artificial Intelligence and Computer Vision (AICV) Lab. Research focused on medical AI, multimodal representation learning, and computer vision, with work appearing at MICCAI, Medical Image Analysis (MedIA), and NeurIPS."></span>
-							</p>
-
-						</div>
-
-						<div class="row mt-3 language">
-							<h2 
-								data-en="BSc in Artificial Intelligence"></h2>
-							<div class="trnsf-thin"
-								data-en="(VNU University of Engineering and Technology, Vietnam — 2022 - 2025)">
-							</div>
-							<div class="trnsf-thin"
-								data-en="GPA: 3.64/4.0.">
-							</div>
-
-							<p class="mt-1 justify">
-								<span data-en="Undergraduate research under the supervision of Dr. "></span><a href="https://scholar.google.com/citations?hl=en&user=tnDavuYAAAAJ&view_op=list_works&sortby=pubdate" class="link-dark" target="_blank" data-en="Tran Quoc Long"></a><span data-en="."></span>
-							</p>
-
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Publications -->
-				<div class="col-md-8 offset-md-1 mb-5" id="publicationsContent">
-					<div class="container">
-
-						<!-- Under review -->
-						<div class="row mt-3">
-							<h2 class="pub-year-h2" data-en="Under Review"></h2>
-
-							<div class="pub-block">
-								<div class="lucida-console h5">Cross-Adversarial Local Distribution Regularization for Semi-supervised Medical Image Segmentation</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Phu Loc Nguyen</span>, Thanh Nguyen, YiCheng Wu, Ngan Le, Trung Le, Dinh Phung, Roland Bammer</div>
-								<div class="pub-congress">Submitted to Medical Image Analysis (MedIA), 2026.</div>
-							</div>
-						</div>
-
-						<!-- 2026 -->
-						<div class="row mt-4">
-							<h2 class="pub-year-h2">2026</h2>
-
-							<div class="pub-block">
-								<div class="lucida-console h5">OmniSpace: Efficient Geometry Awareness for Autonomous Vehicles MLLMs</div>
-								<div class="pub-authors mt-1">Hao Vo, <span class="pub-author">Phu Loc Nguyen</span>, Khoa Vo, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</div>
-								<div class="pub-congress">arXiv preprint arXiv:2606.22617, June 2026.</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2606.22617" target="_blank" class="link-dark">Preprint</a> </span>
-									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
-								</div>
-								<div class="d-none">
-@misc{2026omnispace,
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phu Loc Nguyen — medical AI, multimodal learning, and computer vision research at the University of Arkansas.">
+    <meta name="author" content="Phu Loc Nguyen">
+    <meta name="keywords" content="Phu Loc Nguyen, Nguyen Phu Loc, medical AI, computer vision, multimodal learning">
+    <meta property="og:title" content="Phu Loc Nguyen">
+    <meta property="og:description" content="Medical AI, multimodal learning, and computer vision research.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <title>Phu Loc Nguyen</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+        <nav aria-label="Primary navigation">
+            <ul><li><a href="index.html" aria-current="page">home</a></li><li><a href="publications.html">research</a></li><li><a href="education.html">education</a></li></ul>
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode" hidden>light</button>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="about" aria-labelledby="name">
+            <div class="bio">
+                <h1 id="name">Phu Loc Nguyen</h1>
+                <p>I am a Master's student at the University of Arkansas, Fayetteville, advised by Prof. <a href="https://scholar.google.com/citations?user=8ck0k_UAAAAJ&amp;hl=en">Ngan Le</a>. I am working on medical AI, multimodal learning, and computer vision. My work has appeared at MICCAI, Medical Image Analysis (MedIA), and NeurIPS.</p>
+                <p>Before that, I obtained my B.Sc. at VNU University of Engineering and Technology in 2025, working with Dr. <a href="https://scholar.google.com/citations?hl=en&amp;user=tnDavuYAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Tran Quoc Long</a>.</p>
+                <p class="location">Fayetteville, AR, USA</p>
+                <div class="contact-links" aria-label="Professional links">
+                    <a href="https://scholar.google.com/citations?user=QmCjU08AAAAJ&amp;hl=en">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/phulocnguyen/">LinkedIn</a>
+                    <a href="https://github.com/phulocnguyen">GitHub</a>
+                    <a href="mailto:phuloc01.nguyen@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="profile"><img src="assets/documents/imgs/profile_picture.jpg" alt="Phu Loc Nguyen" width="140"></div>
+        </section>
+<section class="publications" aria-labelledby="research"><h2 id="research">Research</h2><p>My research focuses on <strong>medical AI, multimodal learning, and computer vision</strong>, with an emphasis on medical image analysis, uncertainty estimation, and vision-language models.</p><h2>Selected Publications</h2><article class="publication-entry"><div class="publication-content"><h3 class="publication-title">Cross-Adversarial Local Distribution Regularization for Semi-supervised Medical Image Segmentation</h3><p class="publication-authors"><span class="highlight-name">Phu Loc Nguyen</span>, Thanh Nguyen, YiCheng Wu, Ngan Le, Trung Le, Dinh Phung, Roland Bammer</p><p class="publication-venue">Submitted to Medical Image Analysis (MedIA), 2026.</p></div></article><article class="publication-entry"><div class="publication-content"><h3 class="publication-title">OmniSpace: Efficient Geometry Awareness for Autonomous Vehicles MLLMs</h3><p class="publication-authors">Hao Vo, <span class="highlight-name">Phu Loc Nguyen</span>, Khoa Vo, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</p><p class="publication-venue">arXiv preprint arXiv:2606.22617, June 2026.</p><p class="publication-links"><a href="https://arxiv.org/abs/2606.22617">Preprint</a></p><details class="citation"><summary>BibTeX</summary><pre><code>@misc{2026omnispace,
 	author = {Vo, Hao and Nguyen, Phu Loc and Vo, Khoa and Tran, Sieu and Nguyen, Duc Minh and Cuong, Ngo Xuan and Bui, Nghi D. Q. and Nguyen, Anh and Nguyen, Duy Minh Ho and Le, Ngan},
 	year = {2026},
 	month = {June},
 	title = {OmniSpace: Efficient Geometry Awareness for Autonomous Vehicles MLLMs},
-	journal = {arXiv preprint arXiv:2606.22617}
-}</div>
-							</div>
-
-							<div class="pub-block mt-4">
-								<div class="lucida-console h5">DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving</div>
-								<div class="pub-authors mt-1">Hao Vo, Khoa Vo, <span class="pub-author">Phu Loc Nguyen</span>, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Gladys Gawugah, Sreevenkata Anjani Tishita Godavarthi, Chase Rainwater, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</div>
-								<div class="pub-congress">arXiv preprint arXiv:2605.23176, May 2026.</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2605.23176" target="_blank" class="link-dark">Preprint</a> </span>
-									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
-								</div>
-								<div class="d-none">
-@misc{2026drivespatial,
+	journal = {Neural Information Processing Systems (NeurIPS) 2026}
+}</code></pre><button class="copy-citation" type="button">Copy citation</button><span class="copy-status" role="status"></span></details></div></article><article class="publication-entry"><div class="publication-content"><h3 class="publication-title">DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving</h3><p class="publication-authors">Hao Vo, Khoa Vo, <span class="highlight-name">Phu Loc Nguyen</span>, Sieu Tran, Duc Minh Nguyen, Ngo Xuan Cuong, Gladys Gawugah, Sreevenkata Anjani Tishita Godavarthi, Chase Rainwater, Nghi D. Q. Bui, Anh Nguyen, Duy Minh Ho Nguyen, Ngan Le</p><p class="publication-venue">arXiv preprint arXiv:2605.23176, May 2026.</p><p class="publication-links"><a href="https://arxiv.org/abs/2605.23176">Preprint</a></p><details class="citation"><summary>BibTeX</summary><pre><code>@misc{2026drivespatial,
 	author = {Vo, Hao and Vo, Khoa and Nguyen, Phu Loc and Tran, Sieu and Nguyen, Duc Minh and Cuong, Ngo Xuan and Gawugah, Gladys and Godavarthi, Sreevenkata Anjani Tishita and Rainwater, Chase and Bui, Nghi D. Q. and Nguyen, Anh and Nguyen, Duy Minh Ho and Le, Ngan},
 	year = {2026},
 	month = {May},
 	title = {DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving},
-	journal = {arXiv preprint arXiv:2605.23176}
-}</div>
-							</div>
-
-							<div class="pub-block mt-4">
-								<div class="lucida-console h5">MedSteer: Counterfactual Endoscopic Synthesis via Training-Free Activation Steering</div>
-								<div class="pub-authors mt-1">Trong-Thang Pham, <span class="pub-author">Phu Loc Nguyen</span>, Anh Nguyen, Hien Nguyen, Ngan Le</div>
-								<div class="pub-congress">MICCAI 2026 (early accept).</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2603.07066" target="_blank" class="link-dark">Paper</a> </span>
-									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
-								</div>
-								<div class="d-none">
-@misc{2026medsteer,
+	journal = {Neural Information Processing Systems (NeurIPS) 2026}
+}</code></pre><button class="copy-citation" type="button">Copy citation</button><span class="copy-status" role="status"></span></details></div></article><article class="publication-entry"><div class="publication-content"><h3 class="publication-title">MedSteer: Counterfactual Endoscopic Synthesis via Training-Free Activation Steering</h3><p class="publication-authors">Trong-Thang Pham, <span class="highlight-name">Phu Loc Nguyen</span>, Anh Nguyen, Hien Nguyen, Ngan Le</p><p class="publication-venue">MICCAI 2026 (early accept).</p><p class="publication-links"><a href="https://arxiv.org/abs/2603.07066">Preprint</a></p><details class="citation"><summary>BibTeX</summary><pre><code>@misc{2026medsteer,
 	author = {Pham, Trong-Thang and Nguyen, Phu Loc and Nguyen, Anh and Nguyen, Hien and Le, Ngan},
 	year = {2026},
 	title = {MedSteer: Counterfactual Endoscopic Synthesis via Training-Free Activation Steering},
-	booktitle = {MICCAI 2026 (early accept)}
-}</div>
-							</div>
-						</div>
-
-						<!-- 2025 -->
-						<div class="row mt-4">
-							<h2 class="pub-year-h2">2025</h2>
-
-							<div class="pub-block">
-								<div class="lucida-console h5">Aleatoric Uncertainty Medical Image Segmentation Estimation via Flow Matching</div>
-								<div class="pub-authors mt-1">Van Phi Nguyen, Ngoc Huynh Trinh, Duy Minh Lam Nguyen, <span class="pub-author">Phu Loc Nguyen</span>, Quoc Long Tran</div>
-								<div class="pub-congress">Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (UNSURE), MICCAI Workshop. Lecture Notes in Computer Science, vol. 16166. Springer, Cham, 2026.</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2507.22418" target="_blank" class="link-dark">Paper</a> </span>
-									<span class="pub-force-margin-left"> <i class="fas fa-quote-left"></i> <a href="#" id="citation" class="link-dark">BibTeX</a> </span>
-								</div>
-								<div class="d-none">
-@inproceedings{2026aleatoric,
+	booktitle = {MICCAI 2026 (Spotlight)}
+}</code></pre><button class="copy-citation" type="button">Copy citation</button><span class="copy-status" role="status"></span></details></div></article><article class="publication-entry"><div class="publication-content"><h3 class="publication-title">Aleatoric Uncertainty Medical Image Segmentation Estimation via Flow Matching</h3><p class="publication-authors">Van Phi Nguyen, Ngoc Huynh Trinh, Duy Minh Lam Nguyen, <span class="highlight-name">Phu Loc Nguyen</span>, Quoc Long Tran</p><p class="publication-venue">Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (UNSURE), MICCAI Workshop. Lecture Notes in Computer Science, vol. 16166. Springer, Cham, 2026.</p><p class="publication-links"><a href="https://arxiv.org/abs/2507.22418">Preprint</a></p><details class="citation"><summary>BibTeX</summary><pre><code>@inproceedings{2026aleatoric,
 	author = {Nguyen, Van Phi and Trinh, Ngoc Huynh and Nguyen, Duy Minh Lam and Nguyen, Phu Loc and Tran, Quoc Long},
 	year = {2026},
 	title = {Aleatoric Uncertainty Medical Image Segmentation Estimation via Flow Matching},
@@ -386,67 +65,35 @@
 	volume = {16166},
 	publisher = {Springer, Cham},
 	doi = {10.1007/978-3-032-06593-3_13}
-}</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Academic / Teaching -->
-				<div class="col-md-8 offset-md-1 mb-5" id="academicContent">
-					<div class="container language">
-						🌲 
-						<span 
-							data-en="You have all the time in the world to design this page.">
-						</span>
-						🌍
-					</div>
-				</div>
-
-				<!-- Conferences -->
-				<div class="col-md-8 offset-md-1 mb-5" id="conferencesContent">
-					<div class="container language">
-						🌲 
-						<span 
-							
-							data-en="You have all the time in the world to design this page.">
-						</span>
-						🌍
-						</div>
-				</div>
-
-				<!-- Experience -->
-				<div class="col-md-8 offset-md-1" id="experienceContent">
-					<div class="container language">
-						🌲 
-						<span 
-							data-en="You have all the time in the world to design this page.">
-						</span>
-						🌍
-						</div>
-				</div>
-
-				<!-- Projects -->
-				<div class="col-md-8 offset-md-1" id="projectsContent">
-					<div class="container language">
-						🌲 
-						<span 
-							data-en="You have all the time in the world to design this page.">
-						</span>
-						🌍
-						</div>
-				</div>
-
-			</div>
-		</div>
-
-
-		<!-- Scripts -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-		<script src="assets/js/languageManager.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
-
+}</code></pre><button class="copy-citation" type="button">Copy citation</button><span class="copy-status" role="status"></span></details></div></article></section><p class="see-all-link"><a href="publications.html">See all publications →</a></p>
+        <section class="news" aria-labelledby="news">
+            <h2 id="news">News</h2>
+            <ul>
+                <li>Two papers accepted at NeurIPS 2026.</li>
+                <li>
+                    <span>Preprint released: </span><strong>Cross-Adversarial Local Distribution Regularization for Semi-supervised Medical Image Segmentation</strong>
+                    - <time datetime="2026-07">Jul, 2026</time>
+                </li>
+                <li>
+                    Our accepted paper has been selected as a spotlight paper at MICCAI 2026.
+                    <br><time datetime="2026-05">May 2026</time>
+                </li>
+                <li>
+                    Paper accepted at MICCAI 2026 (early accept)
+                    <br><time datetime="2026-05">May 2026</time>
+                </li>
+                <li>Started my Master's degree at the University of Arkansas, advised by Prof. Ngan Le.</li>
+                <li>
+                    I graduated with a B.Sc. in Artificial Intelligence from VNU University of Engineering and Technology, Vietnam.
+                    <br><time datetime="2025-12">Dec 2025</time>
+                </li>
+                <li>
+                    Paper accepted at UNSURE 2025 (MICCAI Workshop)
+                    <br><time datetime="2025-07">July 2025</time>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>Phu Loc Nguyen · Design adapted from <a href="https://github.com/trqminh/trqminh.github.io">Minh Tran’s template</a>.</footer>
+</body>
 </html>
