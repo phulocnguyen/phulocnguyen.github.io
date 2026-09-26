@@ -11,7 +11,8 @@ Run `python3 -m http.server 8000` from this directory and open http://localhost:
 - `index.html`: biography, professional links, selected publications, and news.
 - `publications.html`: publications by year/status, including expandable BibTeX citations.
 - `education.html`: education history.
-- `assets/css/main.css`: shared template styles and responsive adjustments.
+- `assets/css/main.css`: unchanged stylesheet from Minh Tran’s live template.
+- `assets/css/portfolio.css`: styles for News, Education, citations, and accessibility.
 - `assets/js/theme.js`: initial theme, loaded before rendering.
 - `assets/js/main.js`: theme control, citation copying, and existing analytics integration.
 - `assets/js/config.json`: Google Analytics measurement ID.
@@ -24,3 +25,7 @@ Deploy the repository root to GitHub Pages as a static site. No framework config
 ## Attribution
 
 The new layout is adapted from trqminh/trqminh.github.io; its MIT notice is retained in `LICENSE-template-MIT` (Copyright 2025 Yuhui Zhang). The previous portfolio’s `LICENSE-CC-BY-SA-4.0` remains in the repository. Legacy language/theme assets are retained but are no longer loaded by these pages.
+
+## Publication figures
+
+Each publication currently uses `assets/documents/imgs/publications/placeholder.svg`. Add your figures to that folder and replace the corresponding image `src` in both `index.html` and `publications.html`. The template sizes them to 112 × 112 on the home page and 200 × 150 on the research page, with responsive sizing on smaller screens. Update the image alt text when replacing a placeholder.

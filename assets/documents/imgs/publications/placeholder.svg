@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#e8e8e8"/>
+  <g fill="none" stroke="#888" stroke-width="1.5">
+    <rect x="76" y="38" width="48" height="36" rx="2"/>
+    <circle cx="111" cy="48" r="4"/>
+    <path d="m77 68 14-15 12 12 8-7 12 12"/>
+  </g>
+  <text x="100" y="98" text-anchor="middle" fill="#555" font-family="monospace" font-size="12">Paper figure</text>
+  <text x="100" y="116" text-anchor="middle" fill="#777" font-family="monospace" font-size="10">coming soon</text>
+</svg>

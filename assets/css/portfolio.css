@@ -1,0 +1,23 @@
+/* Additional styles for News, Education, and accessible citations.
+   Template layout rules are kept unchanged in main.css. */
+body { overflow-wrap: break-word; }
+.highlight-name { font-weight: bold; }
+.news, .education { margin-top: 2.5em; }
+.news li { margin-bottom: .8em; }
+.news ul { padding-left: 1.4em; }
+.education article { margin: 1.8em 0; }
+.education h2 { font-size: 1.1em; }
+.education p { margin: .5em 0; }
+.location { color: var(--muted-color); }
+.citation { margin-top: .5em; }
+.citation summary { color: var(--link-color); cursor: pointer; width: fit-content; }
+.citation pre { max-width: 100%; overflow-x: auto; padding: 1em; border: 1px solid var(--border-color); font-size: .9em; }
+.copy-citation { font: inherit; background: transparent; color: var(--text-color); border: 1px solid var(--border-color); padding: .3em .6em; cursor: pointer; }
+.copy-status { margin-left: .7em; }
+:focus-visible { outline: 2px solid var(--link-color); outline-offset: 4px; }
+.skip-link { position: absolute; top: -100px; }
+.skip-link:focus { top: 10px; background: var(--background-color); padding: .5em; }
+[hidden] { display: none !important; }
+
+/* Placeholders are static until real paper figures are supplied. */
+.publication-thumbnail { cursor: default; }
