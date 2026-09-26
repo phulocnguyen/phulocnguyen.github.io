@@ -23,6 +23,7 @@ body { overflow-wrap: break-word; }
 /* Compact News list using the template's typography and theme colors. */
 .news {
     width: 100%;
+    max-width: none;
     min-width: 0;
     font: inherit;
     color: var(--text-color);
@@ -32,6 +33,8 @@ body { overflow-wrap: break-word; }
     color: var(--text-color);
 }
 .news-scroll {
+    width: 100%;
+    max-width: none;
     max-height: 14em;
     overflow-y: auto;
     padding: 0 .75em 0 1em;
