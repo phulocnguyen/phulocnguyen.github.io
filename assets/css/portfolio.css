@@ -77,3 +77,16 @@ body { overflow-wrap: break-word; }
 }
 
 .publication-contribution { margin: .2em 0; color: var(--muted-color); font-size: inherit; }
+
+/* Honors and Awards follows the template's full-width, plain-text layout. */
+.awards { margin-top: 2em; }
+.awards-list { margin: 0; padding: 0; list-style: none; }
+.awards-list li {
+    display: grid;
+    grid-template-columns: 4ch minmax(0, 1fr);
+    gap: 1.5em;
+    align-items: baseline;
+    margin-bottom: 1em;
+}
+.awards-list time { color: var(--muted-color); }
+.awards-list li:last-child { margin-bottom: 0; }
